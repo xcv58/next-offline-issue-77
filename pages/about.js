@@ -1,3 +1,9 @@
+import Link from 'next/link'
+
 export default () => (
-  <div>About us</div>
+  <div>
+    <h1>
+      <Link href='/'><a>Home</a></Link>
+    </h1>
+  </div>
 )
