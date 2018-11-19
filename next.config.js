@@ -3,8 +3,8 @@ const withOffline = require('next-offline')
 
 module.exports = withOffline({
   workboxOpts: {
-    // importScripts: ['./sw.js'],
-    runtimeCaching: [{ urlPattern: /^https?.*(?<!\.mp4)$/, handler: 'networkFirst' }]
+    importScripts: ['./sw.js'],
+    // runtimeCaching: [{ urlPattern: /^https?.*(?<!\.mp4)$/, handler: 'networkFirst' }]
   },
   webpack: (config) => {
     // this will output your push listener file to .next folder
